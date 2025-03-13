@@ -1,17 +1,16 @@
-//
-//  TutorialTCAApp.swift
-//  TutorialTCA
-//
-//  Created by sotatek on 5/3/25.
-//
-
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct TutorialTCAApp: App {
+    
+    static let store = Store(initialState: AppFeature.State()) {
+        AppFeature()
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AppView(store: TutorialTCAApp.store)
         }
     }
 }

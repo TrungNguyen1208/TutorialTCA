@@ -7,36 +7,96 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24288F642D801F72004D0506 /* TutorialTCATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24288F632D801F72004D0506 /* TutorialTCATests.swift */; };
+		24288F702D803586004D0506 /* NumberFactClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24288F6D2D8033B7004D0506 /* NumberFactClient.swift */; };
+		24288F722D804925004D0506 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24288F712D804925004D0506 /* AppView.swift */; };
+		24288F752D828B4C004D0506 /* AppFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24288F742D828B4C004D0506 /* AppFeature.swift */; };
+		24288F772D828C5A004D0506 /* AppFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24288F762D828C5A004D0506 /* AppFeatureTests.swift */; };
 		244CDDD52D77F8250095E47B /* TutorialTCAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244CDDD42D77F8250095E47B /* TutorialTCAApp.swift */; };
-		244CDDD72D77F8250095E47B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244CDDD62D77F8250095E47B /* ContentView.swift */; };
 		244CDDD92D77F8290095E47B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 244CDDD82D77F8280095E47B /* Assets.xcassets */; };
 		244CDDDC2D77F8290095E47B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 244CDDDB2D77F8290095E47B /* Preview Assets.xcassets */; };
+		244CDDE42D77FDAF0095E47B /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 244CDDE32D77FDAF0095E47B /* ComposableArchitecture */; };
+		244CDDE62D77FE620095E47B /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244CDDE52D77FE620095E47B /* CounterView.swift */; };
+		244CDDE82D77FE880095E47B /* CounterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244CDDE72D77FE880095E47B /* CounterFeature.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		24288F652D801F72004D0506 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 244CDDC92D77F8250095E47B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 244CDDD02D77F8250095E47B;
+			remoteInfo = TutorialTCA;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		241ED6242D78408900EEE522 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24288F612D801F72004D0506 /* TutorialTCATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TutorialTCATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24288F632D801F72004D0506 /* TutorialTCATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialTCATests.swift; sourceTree = "<group>"; };
+		24288F6D2D8033B7004D0506 /* NumberFactClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFactClient.swift; sourceTree = "<group>"; };
+		24288F712D804925004D0506 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		24288F742D828B4C004D0506 /* AppFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFeature.swift; sourceTree = "<group>"; };
+		24288F762D828C5A004D0506 /* AppFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFeatureTests.swift; sourceTree = "<group>"; };
 		244CDDD12D77F8250095E47B /* TutorialTCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TutorialTCA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		244CDDD42D77F8250095E47B /* TutorialTCAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialTCAApp.swift; sourceTree = "<group>"; };
-		244CDDD62D77F8250095E47B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		244CDDD82D77F8280095E47B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		244CDDDB2D77F8290095E47B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		244CDDE52D77FE620095E47B /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
+		244CDDE72D77FE880095E47B /* CounterFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		244CDDCE2D77F8250095E47B /* Frameworks */ = {
+		24288F5E2D801F72004D0506 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		244CDDCE2D77F8250095E47B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				244CDDE42D77FDAF0095E47B /* ComposableArchitecture in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24288F622D801F72004D0506 /* TutorialTCATests */ = {
+			isa = PBXGroup;
+			children = (
+				24288F632D801F72004D0506 /* TutorialTCATests.swift */,
+				24288F762D828C5A004D0506 /* AppFeatureTests.swift */,
+			);
+			path = TutorialTCATests;
+			sourceTree = "<group>";
+		};
+		24288F6A2D801FDD004D0506 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		24288F732D828B0D004D0506 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				24288F712D804925004D0506 /* AppView.swift */,
+				24288F742D828B4C004D0506 /* AppFeature.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		244CDDC82D77F8250095E47B = {
 			isa = PBXGroup;
 			children = (
 				244CDDD32D77F8250095E47B /* TutorialTCA */,
+				24288F622D801F72004D0506 /* TutorialTCATests */,
 				244CDDD22D77F8250095E47B /* Products */,
+				24288F6A2D801FDD004D0506 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -44,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				244CDDD12D77F8250095E47B /* TutorialTCA.app */,
+				24288F612D801F72004D0506 /* TutorialTCATests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,10 +112,14 @@
 		244CDDD32D77F8250095E47B /* TutorialTCA */ = {
 			isa = PBXGroup;
 			children = (
-				244CDDD42D77F8250095E47B /* TutorialTCAApp.swift */,
-				244CDDD62D77F8250095E47B /* ContentView.swift */,
+				24288F732D828B0D004D0506 /* App */,
+				241ED6242D78408900EEE522 /* Info.plist */,
 				244CDDD82D77F8280095E47B /* Assets.xcassets */,
+				24288F6D2D8033B7004D0506 /* NumberFactClient.swift */,
+				244CDDE72D77FE880095E47B /* CounterFeature.swift */,
+				244CDDE52D77FE620095E47B /* CounterView.swift */,
 				244CDDDA2D77F8290095E47B /* Preview Content */,
+				244CDDD42D77F8250095E47B /* TutorialTCAApp.swift */,
 			);
 			path = TutorialTCA;
 			sourceTree = "<group>";
@@ -70,6 +135,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		24288F602D801F72004D0506 /* TutorialTCATests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24288F692D801F72004D0506 /* Build configuration list for PBXNativeTarget "TutorialTCATests" */;
+			buildPhases = (
+				24288F5D2D801F72004D0506 /* Sources */,
+				24288F5E2D801F72004D0506 /* Frameworks */,
+				24288F5F2D801F72004D0506 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24288F662D801F72004D0506 /* PBXTargetDependency */,
+			);
+			name = TutorialTCATests;
+			packageProductDependencies = (
+			);
+			productName = TutorialTCATests;
+			productReference = 24288F612D801F72004D0506 /* TutorialTCATests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		244CDDD02D77F8250095E47B /* TutorialTCA */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 244CDDDF2D77F8290095E47B /* Build configuration list for PBXNativeTarget "TutorialTCA" */;
@@ -83,6 +168,9 @@
 			dependencies = (
 			);
 			name = TutorialTCA;
+			packageProductDependencies = (
+				244CDDE32D77FDAF0095E47B /* ComposableArchitecture */,
+			);
 			productName = TutorialTCA;
 			productReference = 244CDDD12D77F8250095E47B /* TutorialTCA.app */;
 			productType = "com.apple.product-type.application";
@@ -97,6 +185,10 @@
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					24288F602D801F72004D0506 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 244CDDD02D77F8250095E47B;
+					};
 					244CDDD02D77F8250095E47B = {
 						CreatedOnToolsVersion = 15.4;
 					};
@@ -111,16 +203,27 @@
 				Base,
 			);
 			mainGroup = 244CDDC82D77F8250095E47B;
+			packageReferences = (
+				244CDDE22D77FDAF0095E47B /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 244CDDD22D77F8250095E47B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				244CDDD02D77F8250095E47B /* TutorialTCA */,
+				24288F602D801F72004D0506 /* TutorialTCATests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		24288F5F2D801F72004D0506 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		244CDDCF2D77F8250095E47B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -133,18 +236,83 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		24288F5D2D801F72004D0506 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24288F772D828C5A004D0506 /* AppFeatureTests.swift in Sources */,
+				24288F642D801F72004D0506 /* TutorialTCATests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		244CDDCD2D77F8250095E47B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				244CDDD72D77F8250095E47B /* ContentView.swift in Sources */,
+				24288F752D828B4C004D0506 /* AppFeature.swift in Sources */,
 				244CDDD52D77F8250095E47B /* TutorialTCAApp.swift in Sources */,
+				244CDDE62D77FE620095E47B /* CounterView.swift in Sources */,
+				244CDDE82D77FE880095E47B /* CounterFeature.swift in Sources */,
+				24288F722D804925004D0506 /* AppView.swift in Sources */,
+				24288F702D803586004D0506 /* NumberFactClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		24288F662D801F72004D0506 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 244CDDD02D77F8250095E47B /* TutorialTCA */;
+			targetProxy = 24288F652D801F72004D0506 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		24288F672D801F72004D0506 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.evansnguyen.tutorial-tca.TutorialTCATests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TutorialTCA.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TutorialTCA";
+			};
+			name = Debug;
+		};
+		24288F682D801F72004D0506 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.evansnguyen.tutorial-tca.TutorialTCATests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TutorialTCA.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TutorialTCA";
+			};
+			name = Release;
+		};
 		244CDDDD2D77F8290095E47B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -197,7 +365,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,7 +422,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -274,11 +442,14 @@
 				DEVELOPMENT_ASSET_PATHS = "\"TutorialTCA/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TutorialTCA/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -286,6 +457,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.evansnguyen.tutorial-tca.TutorialTCA";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -302,11 +477,14 @@
 				DEVELOPMENT_ASSET_PATHS = "\"TutorialTCA/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TutorialTCA/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,6 +492,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.evansnguyen.tutorial-tca.TutorialTCA";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -323,6 +505,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		24288F692D801F72004D0506 /* Build configuration list for PBXNativeTarget "TutorialTCATests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24288F672D801F72004D0506 /* Debug */,
+				24288F682D801F72004D0506 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		244CDDCC2D77F8250095E47B /* Build configuration list for PBXProject "TutorialTCA" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -342,6 +533,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		244CDDE22D77FDAF0095E47B /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.18.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		244CDDE32D77FDAF0095E47B /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 244CDDE22D77FDAF0095E47B /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 244CDDC92D77F8250095E47B /* Project object */;
 }

@@ -1,8 +1,17 @@
-//
-//  AppFeatureTests.swift
-//  TutorialTCATests
-//
-//  Created by sotatek on 13/3/25.
-//
+@testable import TutorialTCA
 
-import Foundation
+import ComposableArchitecture
+import XCTest
+
+final class AppFeatureTests: XCTestCase {
+    
+    func incrementInFirstTab() async {
+        let store = await TestStore(initialState: AppFeature.State()) {
+            AppFeature()
+        }
+        
+        await store.send(\.tab1.incrementButtonTapped) {
+          $0.tab1.count = 1
+        }
+    }
+}

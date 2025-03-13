@@ -1,35 +1,58 @@
-//
-//  TutorialTCATests.swift
-//  TutorialTCATests
-//
-//  Created by sotatek on 11/3/25.
-//
+@testable import TutorialTCA
 
+import ComposableArchitecture
 import XCTest
 
-final class TutorialTCATests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        measure {
-            // Put the code you want to measure the time of here.
+final class CounterFeatureTests: XCTestCase {
+    
+    func testCounter() async {
+        let store = await TestStore(initialState: CounterFeature.State()) {
+            CounterFeature()
+        }
+        
+        await store.send(.incrementButtonTapped) { state in
+            state.count = 1
+        }
+        await store.send(.decrementButtonTapped) { state in
+            state.count = 0
         }
     }
-
+    
+    func testTimer() async {
+        let clock = TestClock()
+        
+        let store = await TestStore(initialState: CounterFeature.State()) {
+            CounterFeature()
+        } withDependencies: { state in
+            state.continuousClock = clock
+        }
+        
+        await store.send(.toggleTimerButtonTapped) {
+            $0.isTimerRunning = true
+        }
+        await clock.advance(by: .seconds(1))
+        await store.receive(\.timerTick) {
+            $0.count = 1
+        }
+        await store.send(.toggleTimerButtonTapped) {
+            $0.isTimerRunning = false
+        }
+    }
+    
+    func testNumberFact() async {
+        let store = await TestStore(initialState: CounterFeature.State()) {
+            CounterFeature()
+        } withDependencies: {
+            $0.numberFact.fetch = { "\($0) is a good number." }
+        }
+        
+        await store.send(.factButtonTapped) { state in
+            state.isLoading = true
+        }
+        
+        await store.receive(\.factResponse) { state in
+            state.isLoading = false
+            state.fact = "0 is a good number."
+        }
+    }
 }
